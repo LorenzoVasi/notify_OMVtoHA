@@ -10,7 +10,7 @@ apt install curl
 
 ## Configuration
 
-There's 3 simple settings into `notifytoha` script:
+There's 3 simple settings you have to change into the `notifytoha` script:
 1. **TOKEN_HA** = Here you must insert the token of your Home Assistant instance. To create it, go to bottom-left corner to username -> Make long life token
 2. **URL** = You must insert your URL of your Home Assistant instance. Remember http or https and don't add `/` at the end of the URL
 3. **DEVICE** = You can specify the device where you want to receive the notifications (for example `notify.[DEVICE]`)

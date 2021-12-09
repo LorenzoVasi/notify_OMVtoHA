@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Configuration
+TOKEN_HA="TOKEN_HA"
+URL="[HTTP/HTTPS]://DOMAIN:PORT"
+DEVICE="DEVICE_OF_NOTIFICATION"
+
+# END Configuration - Start Script
+curl POST -H  "Authorization: Bearer "$TOKEN_HA -H "Content-Type: application/json" -d "{\"message\": \"$(cat ${OMV_NOTIFICATION_MESSAGE_FILE})\", \"title\":\"Message from OMV\"}" "$URL/api/services/notify/${DEVICE}"
+
+exit 0
